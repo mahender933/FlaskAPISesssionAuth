@@ -1,7 +1,7 @@
 # Authentication using Session
 Simple application built using flask in which session based authentication has been used.
 
-To override the default session TTL set enviroment variable with name `SESSION_EXPIRY_TTL` having value in minutes by 
+To override the default session set session TTL enviroment variable with name `SESSION_EXPIRY_TTL` having value in minutes by 
 using export command if in unix based system
 
 
@@ -10,6 +10,7 @@ using export command if in unix based system
 # Improvements TODO
 * Test coverage needs to be increased
 * Documentation pending for apis
+* Integrate support for multiple environment : development, production and testing.
 
 
 # Requirements
