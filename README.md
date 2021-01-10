@@ -23,11 +23,10 @@ $ sudo apt-get install python3.7 python3.7-pip
 # Installation
 * Go to root path where `requirements.txt` resides by using `cd` command.
 * Install all requirements by using `pip`  
-`
+```
 pip install -r requirements.txt
-`
+```
  
-
 
 ### Initialise migration
 python manage.py db init
@@ -46,12 +45,13 @@ Run test cases by following command
 
 ``python manage.py test``
 
-### Build the image
+### Run server using Docker
+
+*  Build the image
 ``
 docker build -t flask-demo-app:latest .
 ``
-Run Docker Container
-
+* Run Docker Container
 `docker run -d -p 5000:5000 flask-tutorial`
 
 
