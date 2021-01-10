@@ -52,7 +52,46 @@ Run test cases by following command
 docker build -t flask-demo-app:latest .
 ``
 * Run Docker Container
-`docker run -d -p 5000:5000 flask-tutorial`
+`docker run -d -p 5000:5000 flask-demo-app`
 
 
+## Endpoints 
+* Api overview - `http://localhost:5000/api`
+* Signup:  `http://localhost:8000/sign-up`
+* Login: `http://localhost:8000/login`
+* Logout: `http://localhost:8000/logout`
+* Profile: `http://localhost:8000/profile` 
+
+#### API Overview (/api)
+    * Method Allowed : GET
+    * Returns all endpoints
+    
+#### Signup (/sign-up)
+    * Adds a new user
+    * Method Allowed : POST
+        "payload_example": {
+            "username": "(str) Username which is unique",
+            "email": "(str) Email address",
+            "phone_number": (str) Phone Number(validates indian phone number),
+            "password": (str) Password must contain at least one character, one number and any one of these (underscore, hyphen, hash) and Password max length should be 6.
+        }
+
+#### Login (/login)
+    * Login existing user
+    * Method Allowed : POST
+        "payload_example": {
+            "username": "(str) Username",
+            "password": (str) Password for that user.
+        }
+
+#### Logout (/logout)
+    * Logout currently logged in user.
+    * Method Allowed : POST
+
+#### Profile (/profile)
+    * Returns currently logged in user profile related information such as username, email etc.
+    * Method Allowed : GET
+    
+    
+    
 
