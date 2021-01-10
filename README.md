@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```
  
 
-### Initialise migration
+### Initialize migration
 python manage.py db init
 
 ### Generate an initial migration
@@ -57,10 +57,10 @@ docker build -t flask-demo-app:latest .
 
 ## Endpoints 
 * Api overview - `http://localhost:5000/api`
-* Signup:  `http://localhost:8000/sign-up`
-* Login: `http://localhost:8000/login`
-* Logout: `http://localhost:8000/logout`
-* Profile: `http://localhost:8000/profile` 
+* Signup:  `http://localhost:5000/sign-up`
+* Login: `http://localhost:5000/login`
+* Logout: `http://localhost:5000/logout`
+* Profile: `http://localhost:5000/profile` 
 
 #### API Overview (/api)
     * Method Allowed : GET
