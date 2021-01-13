@@ -29,16 +29,16 @@ pip install -r requirements.txt
  
 
 ### Initialize migration
-python manage.py db init
+``python manage.py db init``
 
 ### Generate an initial migration
-python manage.py db migrate -m "Initial Migration"
+``python manage.py db migrate -m "Initial Migration"``
 
 ### Apply the migration to database
-python manage.py db upgrade
+``python manage.py db upgrade``
 
 ### Start a server
-python manage.py runserver
+``python manage.py runserver``
 
 ### Testing 
 Run test cases by following command
@@ -86,7 +86,7 @@ docker build -t flask-demo-app:latest .
 
 #### Logout (/logout)
     * Logout currently logged in user.
-    * Method Allowed : POST
+    * Method Allowed : GET
 
 #### Profile (/profile)
     * Returns currently logged in user profile related information such as username, email etc.
